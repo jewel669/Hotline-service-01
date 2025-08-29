@@ -18,11 +18,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
 
-    <title>Document</title>
+    <title>Hotline Service </title>
   </head>
   <body class="bg-[#f5fff6]">
     <!-- header -->
-    <section class="flex justify-between lg:mx-[60px] lg:p-4 ">
+    <section class="flex justify-between lg:mx-[60px] lg:p-4">
       <div class="flex gap-2.5 mr-12">
         <img class="lg:w-20 w-10 lg:h-20 h-10" src="assets/logo.png" alt="" />
         <h1 class="lg:text-3xl text-[13px] font-black text-[#006747]">
@@ -35,26 +35,36 @@
         <div
           class="bg-[#41ff6b1a] lg:w-[123px] lg:h-[52px] w-20 h-10 flex lg:p-3 rounded-[50px] justify-center items-center gap-2"
         >
-          <h3 class="lg:text-2xl text-[15px] font-bold"><span id="heartCount">0</span></h3>
-          <img class="lg:w-[30px] w-6 h-6 lg:h-[30px]" src="assets/heart.png" alt="" />
+          <h3 class="lg:text-2xl text-[15px] font-bold">
+            <span id="heartCount">0</span>
+          </h3>
+          <img
+            class="lg:w-[30px] w-6 h-6 lg:h-[30px]"
+            src="assets/heart.png"
+            alt=""
+          />
         </div>
         <div
           class="bg-[#41ff6b1a] lg:w-[106px] w-20 rounded-[50px] h-10 lg:h-[52px] lg:px-[20px] lg:py-[12px] flex justify-center items-center gap-2"
         >
-          <h3 class="lg:text-2xl text-[15px] font-bold"><span id="coinCount">100</span></h3>
+          <h3 class="lg:text-2xl text-[15px] font-bold">
+            <span id="coinCount">100</span>
+          </h3>
           <img class="w-6 h-6" src="assets/coin.png" alt="" />
         </div>
         <div
           class="bg-[#00a63e] rounded-[50px] lg:w-[127px] w-[70px] h-10 lg:h-[52px] flex items-center justify-center text-white"
         >
-          <h3 class="text-[16px] font-semibold"><span id="copyCount">0 </span> Copy</h3>
+          <h3 class="text-[16px] font-semibold">
+            <span id="copyCount">0 </span> Copy
+          </h3>
         </div>
       </div>
     </section>
 
     <!-- জরুরি সেবা ডিরেক্টরি  -->
     <section
-      class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center text-white py-10 "
+      class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center text-white py-10"
     >
       <img
         src="assets/logo-dark.png"
@@ -69,12 +79,12 @@
     </section>
     <!-- Cards Section -->
 
-    <main class="grid md:grid-cols-3 gap-6 p-6 ">
+    <main class="grid md:grid-cols-3 gap-6 p-6">
       <!-- Cards Section -->
       <section class="md:col-span-2 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
         <div
-          class="bg-white shadow-2xl rounded-xl p-4 flex flex-col justify-between "
+          class="bg-white shadow-2xl rounded-xl p-4 flex flex-col justify-between"
         >
           <div class="flex justify-between items-center">
             <div
@@ -142,7 +152,7 @@
           <div class="flex gap-3 mt-4">
             <button
               onclick="copyNumber('999')"
-              class="flex-1 cursor-pointer bg-gray-200 rounded py-2 hover:bg-blue-950 hover:text-white "
+              class="flex-1 cursor-pointer bg-gray-200 rounded py-2 hover:bg-blue-950 hover:text-white"
             >
               <i class="fa-slab fa-regular fa-copy"></i> Copy
             </button>
@@ -355,7 +365,7 @@
             </button>
             <button
               onclick="makeCall('বিদ্যুৎ বিভ্রাট','16216')"
-              class="flex-1 hover:bg-gray-400 cursor-pointer bg-green-500  text-white rounded py-2"
+              class="flex-1 hover:bg-gray-400 cursor-pointer bg-green-500 text-white rounded py-2"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -442,18 +452,23 @@
           </div>
         </div>
       </section>
- 
+
       <!-- Call History -->
       <aside class="bg-white shadow rounded-xl p-4 w-full">
         <div class="flex justify-between items-center mb-3">
-          <h2 class="font-bold text-lg"><i class="fa-regular fa-clock"></i>  Call History</h2>
-          <button onclick="clearHistory()" class="bg-[#00a63e] text-[16px] cursor-pointer hover:bg-gray-400 font-semibold rounded-[50px] lg:w-[127px] w-20 h-10 lg:h-[52px] flex items-center justify-center text-white">Clear</button>
+          <h2 class="font-bold text-lg">
+            <i class="fa-regular fa-clock"></i> Call History
+          </h2>
+          <button
+            onclick="clearHistory()"
+            class="bg-[#00a63e] text-[16px] cursor-pointer hover:bg-gray-400 font-semibold rounded-[50px] lg:w-[127px] w-20 h-10 lg:h-[52px] flex items-center justify-center text-white"
+          >
+            Clear
+          </button>
         </div>
         <ul id="historyList" class="space-y-2 text-sm text-gray-700"></ul>
       </aside>
     </main>
-
-
 
     <script src="js/script.js"></script>
   </body>
